@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
-}
+/* orange used in branding is #F06B23; */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* NON-GRID FALLBACK HERE */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (grid: 0) {
+
+  /* MOBILE LAYOUT HERE */
+  /* ... */
+
+
+  /* TABLET LAYOUT HERE */
+  /* ... */
+
+
+  /* DESKTOP LAYOUT HERE */
+  @media screen and (min-width: 768px) {
+    .container {
+      display: grid;
+      height: 100vh;
+      width: 100vw;
+    
+      /* complementary to the orange hex value used in logo*/
+      background-color: #f8f8f8; 
+      /* a color scheme using blue, orange, and white would 
+      feel light and fun, and the blue lends itself to the 
+      product being a drone that can fly in the sky */
+    
+      grid-template: 1fr 6fr 4fr 1fr / 1fr 5fr;
+      grid-template-areas: 
+        "logo nav"
+        "hero hero"
+        "content content"
+        "footer footer";
+      gap: 10px;
+    }
+    
+    .logo {
+      background-color: #F06B23;
+      grid-area: logo;
+    }
+    
+    .hero {
+      background-color: #23b9f0;
+      grid-area: hero;
+    }
+    
+    .nav {
+      background-color: lightgray;
+      grid-area: nav;
+    }
+    
+    .content {
+      background-color: burlywood;
+      grid-area: content;
+    }
+    
+    .footer {
+      background-color: orange;
+      grid-area: footer;
+    }
   }
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
