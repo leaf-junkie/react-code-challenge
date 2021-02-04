@@ -1,6 +1,11 @@
 /* orange used in branding is #F06B23; */
 
 /* NON-GRID FALLBACK HERE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 @media (grid: 0) {
 
@@ -25,33 +30,33 @@
       feel light and fun, and the blue lends itself to the 
       product being a drone that can fly in the sky */
     
-      grid-template: 1fr 6fr 4fr 1fr / 1fr 5fr;
+      grid-template: 1fr 6fr 4fr 1fr / 1fr;
       grid-template-areas: 
-        "logo nav"
-        "hero hero"
-        "content content"
+        "nav nav"
+        "header header"
+        "main main"
         "footer footer";
       gap: 10px;
     }
     
-    .logo {
-      background-color: #F06B23;
+    /* .logo {
+      background-color: #F06a23;
       grid-area: logo;
-    }
-    
-    .hero {
-      background-color: #23b9f0;
-      grid-area: hero;
-    }
+    } */
     
     .nav {
       background-color: lightgray;
       grid-area: nav;
     }
+
+    .header {
+      background-color: #23b9f0;
+      grid-area: header;
+    }
     
-    .content {
+    .main {
       background-color: burlywood;
-      grid-area: content;
+      grid-area: main;
     }
     
     .footer {
