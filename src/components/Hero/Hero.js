@@ -7,7 +7,7 @@ function Hero () {
         <header className='hero'>
             <div className='heroText'>
                 <h1 className='display'>
-                    F-210
+                    <span>F</span>210
                 </h1>
                 <h4>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 

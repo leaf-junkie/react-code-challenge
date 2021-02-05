@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Hero from '../Hero/Hero';
-import Features from '../Features/Features';
 
 class HomePage extends Component {
 
@@ -8,9 +7,6 @@ class HomePage extends Component {
         return (
             <>
             <Hero/>
-            <main>
-                <Features/>
-            </main>
             </>
         )
     }
