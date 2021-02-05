@@ -6,8 +6,12 @@ const Nav = () => {
     return (
         <nav>
             <a href='/HomePage'><img className='logo' src={Logo}/></a>
-            <a href='/HomePage'>Home</a>
-            <a href='/ContactPage'>Contact</a>
+            <ul className='navItems'>
+                <li><a href='/HomePage'>Home</a></li>
+                <li><a href='/ContactPage'>Contact</a></li>
+            </ul>
+            
+        
         </nav>
     );
 }

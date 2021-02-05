@@ -1,14 +1,27 @@
 nav {
     display: flex;
-    height: 4vh;
+    height: fit-content;
     background-color: rgb(255, 255, 255, .2);
 }
 
-nav a {
-    color: #222;
-    font-family: 'Archivo';
+.navItems {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .logo {
-    width: 15vw;
+    width: 10vw;
+    margin: 1vh 1vw;
+}
+
+a {
+    color: #222;
+    font-family: 'Archivo';
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    margin: 1vh 1vw;
 }
