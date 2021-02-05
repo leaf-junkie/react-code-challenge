@@ -1,6 +1,5 @@
 # React Code Challenge 
 
-This project was created for Whitelabel as part of the interview process
 
 
 # Getting Started with Create React App
