@@ -1,10 +1,10 @@
 import React from "react";
-import "./header.css";
+import "./Header.css";
 
 function Header () {
     return (
         <header className="header">
-            <h1>Hello, World!</h1>
+            <h1>BYRDMR</h1>
         </header>
     );
 }

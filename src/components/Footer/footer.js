@@ -5,7 +5,12 @@ function Footer() {
   return (
     <footer className="footer">
         <div>
-            <p>Copyright 2021</p>
+          <section>
+
+          </section>
+          <section>
+            <p>Copyright 2021 BYRDMR. All Rights Reserved.</p>
+          </section>
         </div>
     </footer>
   );
