@@ -1,0 +1,29 @@
+.hero {
+    background-image: url('../../assets/sky.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 75vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.drone {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%); 
+}
+
+.heroText {
+    width: 30vw;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: #333;
+    transform: translate(0%, -50%); 
+  }
+
