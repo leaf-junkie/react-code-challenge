@@ -1,3 +1,18 @@
-p {
-    color: #3e5aa8;
+.banner {
+    height: 6vh;
+    padding: 1.5vh;
+    background-color: #F06B23;
+    color: #fff;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature {
+    margin-top: 4vh;
+    width: 25vw;
+    text-align: center;
 }
