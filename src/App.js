@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Nav from './components/Nav/Nav';
-import Footer from './components/Footer/Footer';
 import HomePage from './components/HomePage/HomePage';
 import ContactPage from './components/ContactPage/ContactPage';
 import './App.css';
@@ -30,7 +29,6 @@ class App extends Component {
             </Switch>
           </Router>
         </div>
-        <Footer/>
       </div>
     );
   }

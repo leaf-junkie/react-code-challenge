@@ -7,13 +7,18 @@
   padding: 0;
 }
 
-h1, h2, h3, h4, p {
-  font-family: 'Archivo', sans-serif;
+body {
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, p, a {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .display {
-  /* font-size: 3.38rem; */
+  font-family: 'Archivo', sans-serif;
   font-size: 6rem;
+  font-style: italic;
 }
 
 h1 {
@@ -32,7 +37,7 @@ h4 {
   font-size: 1.5rem;
 }
 
-p {
+p, a {
   font-size: 1rem;
 }
 
