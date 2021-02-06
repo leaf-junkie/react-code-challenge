@@ -1,74 +1,23 @@
-# React Code Challenge 
+# BYRDMR
 
+This simple website is built using React via create-react-app. Routing is implemented through react-router-dom.
 
+## Design choices
+I chose to use the same orange from the logo as an accent color for this site. It shows up in the navigation links on hover, as the background color for important buttons, and is peppered throughout the contact form (input border, desaturated as input background, and to indicate required fields). 
 
-# Getting Started with Create React App
+I was originally going to use a photograph of a light blue sky with a few wispy clouds as a fullscreen background for the hero. I was still dissatisfied with the loading time, despite having compressed the image, so I went with a subtle linear gradient instead. I based my color selection for this gradient on the complimentary color of the orange from the provided logo.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I used what I consider to be some best practices when designing the form, such as 
+- Asking for very little information
+- Providing each input with a label that does not move
+- Not including placeholders, as research has demonstrated that including placeholders in form fields is harmful (see https://www.nngroup.com/articles/form-design-placeholders/)
+- Autofocusing the first input field upon rendering the contact form. 
 
-## Available Scripts
+## Unit tests
+Jest was used to create two unit tests:
+- To check if the Form component renders without crashing
+- To check if the Form component exists in the DOM
 
-In the project directory, you can run:
+To test, run the command npm test
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I have also left a console log to show the values provided by the user in the form. Just open up the console and fill out the form.
