@@ -7,26 +7,19 @@ import './App.css';
 
 
 class App extends Component {
-
-  constructor() {
-    super();
-
-    this.state = {
-      newMessage: false
-    }
-  }
-
   render() {
     return (
       <div className="App">
-        <Router>
-          <Nav/>
-          <Switch>
-            <Route exact path="/" component={() => <HomePage/>} />
-            <Route exact path="/HomePage" component={() => <HomePage/>} />
-            <Route exact path="/ContactPage" component={() => <ContactPage/> } />
-          </Switch>
-        </Router>
+        <Nav/>
+        <div>
+          <Router>
+            <Switch>
+              <Route path="/" component={() => <HomePage/>} />
+              <Route exact path="/HomePage" component={() => <HomePage/>} />
+              <Route exact path="/ContactPage" component={() => <ContactPage/> } />
+            </Switch>
+          </Router>
+        </div>
       </div>
     );
   }

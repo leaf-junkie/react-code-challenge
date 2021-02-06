@@ -21,3 +21,10 @@ Jest was used to create two unit tests:
 To test, run the command npm test
 
 I have also left a console log to show the values provided by the user in the form. Just open up the console and fill out the form.
+
+## Running locally
+To run this application in your local environment, you'll need to first clone the repo using `git clone https://github.com/leaf-junkie/react-code-challenge.git`.
+
+Next, navigate to your newly cloned directory in the terminal. Once there, run `npm install` to install the dependencies.
+
+To run the application, use the command `npm start`.
