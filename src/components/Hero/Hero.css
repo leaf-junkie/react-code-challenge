@@ -33,26 +33,33 @@
 }
 
 .ctaBtn {
-    width: 180px;
+    width: fit-content;
     height: 50px;
-    padding: 8px;
-    margin-top: 3vh;
-    border-radius: 5px;
-    border: none;
-    background-color: #F06B23;
+    background-color: #f05a23;
     color: #fff !important;
     font-size: 20px;
     font-weight: 600;
+    padding: 16px 32px;
+    margin-top: 3vh;
+    border-radius: 5px;
+    border: none;
     cursor: pointer;
+    -webkit-box-shadow: 0 15px 20px rgba(240, 90, 35, 0.35);
+    -moz-box-shadow: 0 15px 20px rgba(240, 90, 35, 0.35);
+    box-shadow: 0 15px 20px rgba(240, 90, 35, 0.35);
 }
 
-.ctaBtn:hover {
-    background-color: #f37648;
-}
-
-.ctaBtn:active,
+.ctaBtn:hover,
 .ctaBtn:focus {
-    background-color: #dd460f;
+    background-color: #f16835;
+    -webkit-box-shadow: 0 5px 20px rgba(240, 90, 35, 0.4);
+    -moz-box-shadow: 0 5px 20px rgba(240, 90, 35, 0.4);
+    box-shadow: 0 5px 20px rgba(240, 90, 35, 0.4);
+}
+
+.ctaBtn:active {
+    background-color: #de6235;
+    box-shadow: none;
 }
 
 /* Medium devices, like tablets */

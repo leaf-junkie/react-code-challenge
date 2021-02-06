@@ -2,36 +2,86 @@ import React from 'react';
 import './Form.css';
 
 class Form extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { value: '' };
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
+    // Set the initial state
+    state = {
+        fname: '',
+        email: '',
+        message: ''
+    };
 
-    handleChange(event) {
-        this.setState({value: event.target.value});
-    }
-
-    handleSubmit(event) {
-        console.log(`New message received: ${this.state.value}`);
+    handleInputChange = event => {
+        // Get the value and name of the input that triggered the change
+        const { fname, value } = event.target;
+    
+        // Update the input's state
+        this.setState({
+            [fname]: value
+        });
+    };
+    
+    handleFormSubmit = event => {
         event.preventDefault();
-    }
+        console.log(`New message received
+            \n-----------------------------
+            \nName: ${this.state.fname} 
+            \nEmail: ${this.state.email} 
+            \nMessage: ${this.state.message}`
+        );
+
+        // Clear form
+        this.setState({
+            fname: '',
+            email: '',
+            message: ''
+        });
+    };
 
     render() {
         return (
+            
             <section className='container'>
-                <form onSubmit={this.handleSubmit} className='form' autoComplete='off'>
+                <form 
+                onSubmit={this.handleFormSubmit} 
+                className='form' 
+                autoComplete='off'
+                data-testid='form'
+            >
                     <h2>Say Hello</h2>
 
-                    <label for='name'>Name <span>*</span></label>
-                    <input type='text' id='name' name='name' autoFocus required aria-describedby='name'/>
+                    <label htmlFor='fname'>Name <span>*</span></label>
+                    <input 
+                        value={this.state.fname}
+                        fname='fname'
+                        onChange={this.handleInputChange}
+                        type='text' 
+                        id='fname' 
+                        aria-describedby='fname'
+                        autoFocus
+                        required 
+                    />
 
-                    <label for='email'>Email <span>*</span></label>
-                    <input type='text' id='email' name='email' required aria-describedby='email'/>
+                    <label htmlFor='email'>Email <span>*</span></label>
+                    <input
+                        value={this.state.email}
+                        name='email' 
+                        onChange={this.handleInputChange}
+                        type='text' 
+                        id='email' 
+                        aria-describedby='email'
+                        required 
+                    />
 
-                    <label for='message'>Message <span>*</span></label>
-                    <textarea id='message' name='message' rows={10} maxLength='300' required aria-describedby='message'/>
+                    <label htmlFor='message'>Message <span>*</span></label>
+                    <textarea 
+                        value={this.state.message}
+                        onChange={this.handleInputChange}
+                        name='message' 
+                        id='message' 
+                        aria-describedby='message'
+                        maxLength='300' 
+                        rows={10} 
+                        required 
+                    />
 
                     <input type='submit' id='submitBtn' value='Submit'/>
 
@@ -42,12 +92,3 @@ class Form extends React.Component {
 }
 
 export default Form;
-
-
-
-
-
-
-
-
-

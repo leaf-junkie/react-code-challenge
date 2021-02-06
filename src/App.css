@@ -42,3 +42,9 @@ h4 {
 p, a {
   font-size: 1rem;
 }
+
+a, #submitBtn {
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
