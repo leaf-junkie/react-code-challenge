@@ -6,7 +6,6 @@ class ContactPage extends Component {
     render() {
         return (
             <main>
-                <h2>contact page</h2>
                 <Form/>
             </main>
         )

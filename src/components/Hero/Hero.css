@@ -1,35 +1,91 @@
 .hero {
-    background-image: url('../../assets/sky.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
     height: 100vh;
     width: 100vw;
-    top: 0;
-    left: 0;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.drone {
-    width: 45vw;
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%); 
+.drone,
+.shadow {
+    width: 85vw;
 }
 
 .heroText {
-    width: 30vw;
-    text-align: left;
-    position: absolute;
-    top: 50%;
-    left: 10%;
+    width: 100vw;
+    text-align: center;
     color: #333;
-    transform: translate(0%, -50%); 
-  }
+    margin-top: 6vh;
+    margin-bottom: 8vh;
+}
+
+.heroText p {
+    font-size: 24px;
+    margin-bottom: 4vh;
+}
 
 .display span {
     color: #F06B23;
     font-weight: 400;
     font-style: normal;
 }
+
+.ctaBtn {
+    width: 180px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 3vh;
+    border-radius: 5px;
+    border: none;
+    background-color: #F06B23;
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.ctaBtn:hover {
+    background-color: #f37648;
+}
+
+.ctaBtn:active,
+.ctaBtn:focus {
+    background-color: #dd460f;
+}
+
+/* Medium devices, like tablets */
+@media screen and (min-width: 600px) {
+    .drone,
+    .shadow {
+        width: 50vw;
+    }
+}
+
+/* Larger devices, like laptops and desktops */
+@media screen and (min-width: 1025px) {       
+    .drone,
+    .shadow {
+        width: 45vw;
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%); 
+    }
+    
+    .shadow {
+        top: 90%;
+    } 
+
+    .heroText {
+        width: 30vw;
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        color: #333;
+        transform: translate(0%, -50%); 
+    }    
+}
+  

@@ -1,7 +1,11 @@
 nav {
     display: flex;
     height: fit-content;
-    background-color: rgb(255, 255, 255, .2);
+    background-color: #fff;
+    font-weight: 600;
+    -webkit-box-shadow: 0 6px 12px rgba(1, 14, 19, 0.2);
+    -moz-box-shadow: 0 6px 12px rgba(1, 14, 19, 0.2);
+    box-shadow: 0 6px 12px rgba(1, 14, 19, 0.2);
 }
 
 .navItems {
@@ -11,17 +15,20 @@ nav {
 }
 
 .logo {
-    width: 10vw;
-    margin: 1vh 1vw;
+    width: 150px;
+    margin: 1vh 3vw;
 }
 
 a {
-    color: #222;
-    font-family: 'Archivo';
     text-decoration: none;
 }
 
 li {
     list-style: none;
-    margin: 1vh 1vw;
+    margin: 1vh 3vw;
+}
+
+a:hover,
+a:active {
+    color: #F06B23;
 }

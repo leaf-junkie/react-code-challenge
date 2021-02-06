@@ -19,16 +19,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Nav/>
-        <div>
-          <Router>
-            <Switch>
-              <Route exact path="/" component={() => <HomePage/>} />
-              <Route exact path="/HomePage" component={() => <HomePage/>} />
-              <Route exact path="/ContactPage" component={() => <ContactPage/> } />
-            </Switch>
-          </Router>
-        </div>
+        <Router>
+          <Nav/>
+          <Switch>
+            <Route exact path="/" component={() => <HomePage/>} />
+            <Route exact path="/HomePage" component={() => <HomePage/>} />
+            <Route exact path="/ContactPage" component={() => <ContactPage/> } />
+          </Switch>
+        </Router>
       </div>
     );
   }
