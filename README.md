@@ -27,4 +27,4 @@ To run this application in your local environment, you'll need to first clone th
 
 Next, navigate to your newly cloned directory in the terminal. Once there, run `npm install` to install the dependencies.
 
-To run the application, use the command `npm start`.
+To run the application, use the command `npm start` or `yarn add`.
