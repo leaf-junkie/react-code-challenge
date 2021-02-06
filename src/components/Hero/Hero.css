@@ -11,6 +11,7 @@
 .drone,
 .shadow {
     width: 85vw;
+    max-width: 900px;
 }
 
 .heroText {
