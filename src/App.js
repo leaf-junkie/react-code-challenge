@@ -5,21 +5,18 @@ import HomePage from './components/HomePage/HomePage';
 import ContactPage from './components/ContactPage/ContactPage';
 import './App.css';
 
-
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Nav/>
-        <div>
-          <Router>
-            <Switch>
-              <Route path="/" component={() => <HomePage/>} />
-              <Route exact path="/HomePage" component={() => <HomePage/>} />
-              <Route exact path="/ContactPage" component={() => <ContactPage/> } />
-            </Switch>
-          </Router>
-        </div>
+        <Router>
+          <Switch>
+            <Route exact path="/" component={() => <HomePage/>} />
+            <Route exact path="/HomePage" component={() => <HomePage/>} />
+            <Route exact path="/ContactPage" component={() => <ContactPage/> } />
+          </Switch>
+        </Router>
       </div>
     );
   }
